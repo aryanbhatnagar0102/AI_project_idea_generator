@@ -16,7 +16,8 @@ color:white;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:20px 60px;
+flex-wrap:wrap;
+padding:20px 40px;
 }
 
 .logo{
@@ -24,8 +25,13 @@ font-size:22px;
 font-weight:600;
 }
 
+.nav-links{
+display:flex;
+flex-wrap:wrap;
+}
+
 .nav-links a{
-margin-left:25px;
+margin-left:20px;
 text-decoration:none;
 color:white;
 opacity:0.9;
@@ -153,9 +159,9 @@ max-width:250px;
 max-width:1200px;
 margin:80px auto 0 auto;
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:40px;
-padding:0 40px;
+padding:0 30px;
 align-items:stretch;
 }
 
@@ -166,7 +172,7 @@ align-items:stretch;
 display:flex;
 flex-direction:column;
 background:#ffffff;
-padding:32px;
+padding:28px;
 border-radius:18px;
 box-shadow:0 12px 40px rgba(0,0,0,0.18);
 transition:all 0.35s ease;
@@ -205,7 +211,7 @@ margin-bottom:6px;
 }
 
 
-/* PUSH BUTTON TO BOTTOM */
+/* CARD BUTTON */
 
 .card button{
 margin-top:auto;
@@ -328,8 +334,6 @@ transform:scale(1.1);
 
 /* REGENERATE BUTTON */
 
-/* REGENERATE BUTTON */
-
 .regen-container{
 width:100%;
 display:flex;
@@ -357,35 +361,8 @@ box-shadow:0 10px 25px rgba(0,0,0,0.3);
 transform:scale(1.08);
 }
 
-@media(max-width:768px){
 
-.navbar{
-flex-direction:column;
-gap:10px;
-}
-
-.nav-links{
-display:flex;
-gap:15px;
-}
-
-.hero{
-padding:80px 20px 40px 20px;
-}
-
-.ai-title{
-font-size:32px;
-}
-
-form{
-width:90%;
-}
-
-.container{
-padding:0 20px;
-}
-
-}
+/* META */
 
 .meta{
 font-size:16px;
@@ -406,19 +383,50 @@ color:#333;
 box-shadow:0 2px 6px rgba(0,0,0,0.08);
 }
 
-.form-glow{
-position:relative;
-display:flex;
-justify-content:center;
-align-items:center;
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width:768px){
+
+.navbar{
+flex-direction:column;
+gap:10px;
+text-align:center;
 }
 
-.form-glow::before{
-content:"";
-position:absolute;
-width:420px;
-height:420px;
-background:radial-gradient(circle, rgba(120,150,255,0.4), transparent 70%);
-filter:blur(60px);
-z-index:-1;
+.nav-links{
+justify-content:center;
+margin-top:10px;
+}
+
+.nav-links a{
+margin:0 10px;
+}
+
+.ai-title{
+font-size:30px;
+}
+
+.hero p{
+font-size:16px;
+padding:0 10px;
+}
+
+form{
+width:90%;
+}
+
+.container{
+padding:0 15px;
+gap:25px;
+}
+
+.card{
+padding:22px;
+}
+
+.regen-container button{
+width:90%;
+}
+
 }
