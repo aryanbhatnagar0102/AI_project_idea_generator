@@ -1,5 +1,7 @@
 /* GLOBAL */
-
+*{
+box-sizing:border-box;
+}
 body{
 font-family:'Poppins',sans-serif;
 background:linear-gradient(135deg,#5f2c82,#49a09d);
@@ -417,12 +419,15 @@ width:90%;
 }
 
 .container{
-padding:0 15px;
+grid-template-columns:1fr;
 gap:25px;
+padding:0 15px;
 }
 
 .card{
-padding:22px;
+width:100%;
+box-sizing:border-box;
+margin:0;
 }
 
 .regen-container button{
