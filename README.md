@@ -2,7 +2,7 @@
 
 A web application that generates unique software project ideas using AI based on user skill level and domain interest.
 
-Live Demo: https://ai-project-idea-generator.vercel.app
+Live Demo: [https://ai-project-idea-generator.vercel.app](https://ai-project-idea-generator.vercel.app/)
 
 ---
 
