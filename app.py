@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 # -------- GROQ SETTINGS --------
 
-GROQ_API_KEY = "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"
+GROQ_API_KEY = "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"
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 MODEL = "llama-3.1-8b-instant"
 
