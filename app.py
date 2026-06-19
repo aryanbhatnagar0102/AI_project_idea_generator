@@ -3,14 +3,11 @@ import requests
 
 app = Flask(__name__)
 
-# -------- GROQ SETTINGS --------
-
 GROQ_API_KEY = "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"
 GROQ_URL = "https://api.groq.com/openai/v1/chat/completions"
 MODEL = "llama-3.1-8b-instant"
 
 
-# -------- PARSE AI RESPONSE --------
 
 def parse_project(text):
 
