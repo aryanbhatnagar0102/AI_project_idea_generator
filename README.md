@@ -1,129 +1,38 @@
-# AI Project Idea Generator
+# NoteVault
 
-A web application that generates unique software project ideas using AI based on user skill level and domain interest.
+A simple Class 12 PCMB study website where you can find handwritten notes and video lectures chapter-wise in one place.
 
-Live Demo: [https://ai-project-idea-generator.vercel.app](https://ai-project-idea-generator.vercel.app/)
+## Description
 
----
+NoteVault is made for Class 12 students who want their study resources in one place instead of searching for notes and video lectures separately.
+It includes resources for PCMB (Physics, Chemistry, Mathematics and Biology). Each subject has chapter-wise handwritten PDF notes and YouTube video lectures. 
 
-## Overview
+## Features 
 
-This application allows users to input their technical skill and preferred difficulty level, and receive structured project ideas including:
+- Full class 12 PCMB - Physics, Chemistry, Mathematics and Biology resources at one place
+- Chapter - wise handwritten PDF notes
+- YouTube video lectures for all chapters
+- Chapter accordion for easy navigation
+- Video + PDF study workspace
+- Dark and Light both mode available
 
-* Project name
-* Difficulty level
-* Estimated build time
-* Recommended tech stack
-* Key features
-* Step-by-step implementation plan
+### Screenshots
 
-The goal is to help developers discover meaningful and practical project ideas tailored to their experience level.
+<img width="1912" height="916" alt="Screenshot 2026-09-26 201221" src="https://github.com/user-attachments/assets/2cffcbb2-3a41-4447-a235-66d33452b41f" />
 
----
 
-## Features
+## Getting Started
 
-* AI-powered project idea generation
-* Structured output for easy understanding
-* Multiple unique ideas per request
-* Responsive design for desktop and mobile
-* Copy-to-clipboard functionality
-* Regenerate ideas feature
+### Dependencies
 
----
+- A web browser
+- Internet connection for YouTube video lectures
 
-## Technology Stack
+### Installing
 
-* Frontend: HTML, CSS
-* Backend: Python (Flask)
-* AI Integration: Groq API
-* Deployment: Vercel
-* Version Control: GitHub
+Clone the repository:
 
----
-
-## Project Structure
-
+```bash
+git clone https://github.com/aryanbhatnagar0102/NoteVault.git
 ```
-AI_project_idea_generator
-│
-├── api/
-│   └── index.py
-├── templates/
-│   └── index.html
-├── static/
-│   └── style.css
-├── app.py
-├── wsgi.py
-├── requirements.txt
-└── vercel.json
-```
-
----
-
-## Installation and Setup
-
-### 1. Clone the repository
-
-```
-git clone https://github.com/your-username/AI_project_idea_generator.git
-cd AI_project_idea_generator
-```
-
-### 2. Install dependencies
-
-```
-pip install -r requirements.txt
-```
-
-### 3. Configure environment variables
-
-Set your Groq API key:
-
-```
-GROQ_API_KEY=your_api_key_here
-```
-
-### 4. Run the application
-
-```
-python app.py
-```
-
----
-
-## Environment Variables
-
-| Variable     | Description                 |
-| ------------ | --------------------------- |
-| GROQ_API_KEY | Groq API authentication key |
-
----
-
-## Deployment
-
-The application is deployed on Vercel using Python serverless functions.
-
----
-
-## Future Enhancements
-
-* Improved diversity in generated ideas
-* Enhanced UI and user experience
-* Export or share project ideas
-* Advanced prompt engineering
-* User customization features
-
----
-
-## Acknowledgements
-
-* Groq for providing the AI API
-* Flask for backend development
-* Vercel for hosting and deployment
-
----
-
-## Author
-
-Aryan Bhatnagar
+Or Download the Zip file and open index.html in your browser.
